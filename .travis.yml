@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t imagename -f Dockerfile.dev .
+  - docker build -t gsylverman/imagename -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true gsylverman/imagename npm run test
