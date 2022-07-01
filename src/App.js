@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
 
 function App() {
+  const [nr, setNr] = useState(0);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,8 @@ function App() {
         >
           Test
         </a>
+        <button onClick={() => setNr(prevState => prevState + 1)}>+</button>
+        <button onClick={() => setNr(prevState => prevState - 1)}>-</button>
       </header>
     </div>
   );
