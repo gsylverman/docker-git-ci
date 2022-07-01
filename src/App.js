@@ -20,6 +20,7 @@ function App() {
         >
           Test
         </a>
+        <div>{nr}</div>
         <button onClick={() => setNr(prevState => prevState + 1)}>+</button>
         <button onClick={() => setNr(prevState => prevState - 1)}>-</button>
       </header>
